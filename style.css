@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-weight: 200;
+}
+
+h1{
+  background-color: rgb(213, 203, 239);
+  padding: 2.5% 0 2.5% 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.coin {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: rgb(213, 203, 239);
+  margin: auto;
+  margin-top: 3%;
+}
+
+button {
+  font-size: 20px;
+  background-color: lightgrey;
+  cursor: pointer;
+  border-radius: 5%;
+  margin: 0 1% 0 1%;
+  outline: 0;
+}
+
+button:hover {
+  background: rgb(213, 203, 239);
+  color: white;
+}
+
+p {
+  width: 100%;
+  background-color: rgb(213, 203, 239);
+  padding: 2.5% 0 2.5% 0;
+}
+
+.flip {
+  animation-name: flip;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flip {
+  100% {
+    transform: rotate3d(1, 0, 0, 1080deg)
+  }
+}
